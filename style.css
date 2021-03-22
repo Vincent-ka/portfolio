@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: 'Pokemon Solid'; 
+    src: url('font/Pokemon\ Solid.ttf');
+}
+
+@media screen and (max-width: 800px) {
+  .profil-pic {
+    display: none;
+  }
+  header {
+    text-align: center;
+  }
+  header > section:nth-child(1) {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .presentation {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 50px;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  #adresse > p {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  header > section:nth-child(1) {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header > section:nth-child(2) {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
+  .presentation {
+    text-align: left;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+body {
+  color: whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.accent {
+  color: #7ceece;
+}
+
+header {
+  background-color: #101010;
+  min-height: 10vh;
+  display: flex;
+  padding-top: 10vh;
+  padding-bottom: 50px;
+}
+
+.profil-pic {
+  width: 300px;
+}
+
+.profil-pic > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 55px;
+  margin-top: 10px;
+}
+
+.projets {
+  background-color: #1e1c27;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projet {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: center;
+  min-width: 320px;
+  flex: 1;
+  height: 300px;
+}
+
+.projet-pic {
+  width: 180px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projet-pic img {
+  width: 100%;
+}
+
+.projet > p {
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.cv {
+  font-size: 80px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.xoox {
+  font-size: 80px;
+  font-weight: bold;
+  color: rgb(187, 110, 116);
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #1e1c27;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  padding-top: 60px;
+}
+
+footer > p {
+  font-size: 10px;
+}
+
+#adresse > p {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  width: 130px;
+  padding: 10px;
+  background-color: #7ceece;
+}
+
+#pokemon {
+  font-family: 'Pokemon Solid', 'sans-serif';
+  color: rgb(255, 255, 0);
+  font-size: 60px;
+}
