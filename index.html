@@ -1,118 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=h&, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" src="script.js"></script>
-    <title>Vincent Portfolio</title>
-  </head>
 
-  <body>
-    <header>
-      <section>
-        <div class="profil-pic">
-          <img src="vincent_pic.jpg" alt="" />
-        </div>
-      </section>
-      <section>
-        <article>
-          <h1 class="title">Vincent <span class="accent">|</span> Portfolio</h1>
-          <p class="presentation">
-            Bonjour ! Je m'appelle
-            <span class="accent">Vincent Katalinski</span> et je suis
-            développeur junior. Vous pouvez retrouver ci dessous quelques
-            <span class="accent">projets</span> que j'ai réalisé ainsi que les
-            <span class="accent">sites</span> où me trouver.
-          </p>
-          <a href="" id="adresse">
-            <p>Me contacter</p>
-          </a>
-        </article>
-      </section>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=h&, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <script type="module" src="script.js"></script>
+  <title>Vincent Portfolio</title>
+</head>
 
-    <main>
-      <section class="projets">
-        <article class="projet">
-          <div class="projet-pic">
-            <a href="https://muzynk.herokuapp.com/" target="_blank"
-              ><img src="mumu.png" alt=""
-            /></a>
-          </div>
-          <p>Muzynk</p>
-        </article>
-        <article class="projet">
-          <div class="projet-pic">
-            <a
-              href="https://vincent-projets.lescigales.org/toilettes_de_paris/"
-              target="_blank"
-              ><img src="wc1.png" alt=""
-            /></a>
-          </div>
-          <p>Toilettes publiques de Paris</p>
-        </article>
-        <article class="projet">
-          <div class="projet-pic">
-            <a
-              href="http://vincent-projets.lescigales.org/pokedex/"
-              target="_blank"
-              ><p id="pokemon">Pokedex</p></a
-            >
-          </div>
-          <p>Pokedex (travail sur l'API)</p>
-        </article>
-      </section>
+<body>
+  <header>
+    <section>
+      <div class="profil-pic">
+        <img src="vincent_pic.jpg" alt="" />
+      </div>
+    </section>
+    <section>
+      <article>
+        <h1 class="title">Vincent <span class="accent">|</span> Portfolio</h1>
+        <p class="presentation">
+          Bonjour ! Je m'appelle
+          <span class="accent">Vincent Katalinski</span> et je suis
+          développeur junior. Vous pouvez retrouver ci dessous quelques
+          <span class="accent">projets</span> que j'ai réalisés ainsi que les
+          <span class="accent">sites</span> où me trouver.
+        </p>
+        <a href="" id="adresse">
+          <p>Me contacter</p>
+        </a>
+      </article>
+    </section>
+  </header>
 
-      <section class="projets">
-        <article class="projet">
-          <div class="projet-pic">
-            <a href="http://vincent-projets.lescigales.org/puma/" target="_blank"
-              ><img src="logo-puma.png" alt=""
-            /></a>
+  <main>
+    <section class="projets">
+      <article class="projet">
+        <a class="lien-site" href="https://muzynk.herokuapp.com/" target="_blank">
+          <div class="card">
+            <div class="projet-pic"><img src="mumu.png" alt="" />
+            </div>
+            <p class="description">Un réseau social pour les passionnés de musique - Projet chef d'oeuvre de la
+              formation de développeur web et web mobile</p>
+            <p class="site">Muzynk</p>
           </div>
-          <p>Inspiration Puma</p>
-        </article>
-        <article class="projet">
-          <div class="projet-pic">
-            <a
-              href="http://vincent-projets.lescigales.org/morpion/"
-              target="_blank"
-            >
+        </a>
+      </article>
+
+      <article class="projet">
+        <a class="lien-site" href="https://vincent-projets.lescigales.org/toilettes_de_paris/" target="_blank">
+          <div class="card">
+            <div class="projet-pic">
+              <img id="pic-toilette" src="wc1.png" alt="" />
+            </div>
+            <p class="description">Liste des toilettes publiques parisiennes, qu'il est possible de filtrer selon
+              l'adresse ou bien l'arrondissement.</p>
+            <p class="site">Toilettes de Paris</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="projet">
+        <a class="lien-site" href="http://vincent-projets.lescigales.org/pokedex/" target="_blank">
+          <div class="card">
+            <div class="projet-pic">
+              <p id="pokemon">Pokedex</p>
+            </div>
+            <p class="description">Liste des Pokemon qui sont selectionnables afin d'affficher leurs informations.
+              Travail sur l'API, le design était déjà réalisé préalablement.</p>
+            <p class="site">Pokedex</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="projet">
+        <a class="lien-site" href="http://vincent-projets.lescigales.org/puma/" target="_blank">
+          <div class="card">
+            <div class="projet-pic">
+              <img src="logo-puma.png" alt="" />
+            </div>
+            <p class="description">Réalisation du front-end ayant pour inspiration le site de Puma.</p>
+            <p class="site">Inspiration Puma</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="projet">
+        <a class="lien-site" href="http://vincent-projets.lescigales.org/morpion/" target="_blank">
+          <div class="card">
+            <div class="projet-pic">
               <p class="xoox">XooX</p>
-            </a>
+            </div>
+            <p class="description">Projet ayant pour inspiration le fameux jeu Moprion, ayant été réalisé pour la
+              formation de développeur web et web mobile.</p>
+            <p class="site">Morpion</p>
           </div>
-          <p>Morpion</p>
-        </article>
-        <article class="projet">
-          <div class="projet-pic">
-            <a href="https://github.com/Vincent-ka" target="_blank"
-              ><img src="github.png" alt=""
-            /></a>
-          </div>
-          <p>Github</p>
-        </article>
-      </section>
+        </a>
+      </article>
 
-      <section class="projets">
-        <article class="projet">
-          <div class="projet-pic">
-            <a href="cv_vincent_katalinski.pdf" target="_blank">
-              <p class="cv">CV</p>
-            </a>
+      <article class="projet">
+        <a class="lien-site" href="https://github.com/Vincent-ka" target="_blank">
+          <div class="card">
+            <div class="projet-pic">
+              <img src="github.png" alt="" />
+            </div>
+            <p class="description">Lien vers Github permettant d'avoir accès aux codes des projets ici présents ainsi
+              que d'autres réalisations.</p>
+            <p class="site">Github</p>
           </div>
-        </article>
-      </section>
-    </main>
+        </a>
+      </article>
+    </section>
+  </main>
 
-    <footer>
-      <p>Vincent Katalinski, 2021</p>
-    </footer>
-  </body>
+  <footer>
+    <p>
+      <a id="linkedin" href="https://www.linkedin.com/in/vincent-katalinski-b3705a146/" target="_blank">Linkedin</a>
+      - <a id="codewars" href="https://www.codewars.com/users/Vincent-ka" target="_blank">codewars</a> - <a id="cv"
+        href="cv_vincent_katalinski.pdf" target="_blank">CV</a>
+    </p>
+    <p>Vincent Katalinski, 2021</p>
+  </footer>
+</body>
+
 </html>
